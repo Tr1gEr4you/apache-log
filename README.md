@@ -19,9 +19,9 @@ pipenv run python3 main.py
 ```DataBase_update``` - **POST** метод. Возвращает `{"status" : "ok"}`. Used to update database with log files. 
 
 ```DataBase_get_log``` - **GET** метод. Принимает два аргумента: `from` и `to`. Возвращает массив из **JSON**, each of them have `{"address" : "192.168.0.1", "date" : "2023-06-22-13-00-00}` structure. Date must be in **YYYY-MM-DD-HH-mm-dd** format. You can get all entries in database, by providing `from=all` argument. 
+
 ## Пример запроса
 
-## http
 ```
 POST http://127.0.0.1:5000/DataBase_update
 {"status" : "ok"}
