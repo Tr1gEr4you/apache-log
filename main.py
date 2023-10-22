@@ -63,7 +63,7 @@ def DataBase_update():
                 f.close()
             except BaseException as e:
                 print(
-                    f"Не удается открыть apache лог: '{config['DEFAULT']['ApacheLogPath']}{'/' if config['DEFAULT']['ApacheLogPath'][-1] != '/' else ''}{file}': "+str(e))
+                    f"Не удается открыть apache лог.: '{config['DEFAULT']['ApacheLogPath']}{'/' if config['DEFAULT']['ApacheLogPath'][-1] != '/' else ''}{file}': "+str(e))
                 exit()
     cursor.close()
     conn.close()
