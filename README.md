@@ -16,7 +16,7 @@ pipenv run python3 main.py
 
 ## Формат запроса
 
-```DataBase_update``` - **POST** метод. Возвращает `{"status" : "ok"}`. Used to update database with log files. 
+```DataBase_update``` - **POST** метод. Возвращает `{"status" : "ok"}`.
 
 ```DataBase_get_log``` - **GET** метод. Принимает два аргумента: `from` и `to`. Возвращает массив из **JSON**.
 
