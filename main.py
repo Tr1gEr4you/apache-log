@@ -33,6 +33,7 @@ def DataBase_get_log():
     ans = cursor.fetchall()
     for addrs in ans:
         json.append({"address": addrs[0], "date": addrs[1]})
+        
     response = jsonify(json)
     response.headers.add('Access-Control-Allow-Origin', '*')
     cursor.close()
@@ -70,9 +71,6 @@ def DataBase_update():
     response.headers.add('Access-Control-Allow-Origin', '*')
 
     return response
-
-
-
 
 if __name__ == '__main__':
     app.run(debug=False, host="0.0.0.0", port=5001)
