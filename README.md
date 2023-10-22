@@ -21,6 +21,7 @@ pipenv run python3 main.py
 ## Пример запроса
 
 ## http
+```
 POST http://127.0.0.1:5000/DataBase_update
 {"status" : "ok"}
 
@@ -29,5 +30,6 @@ GET http://127.0.0.1:5000/DataBase_get_log?from=2023-06-22-12-45-10&to=2023-06-2
 
 GET http://127.0.0.1:5000/DataBase_get_log?from=all
 [{"address" : "192.168.0.1", "date" : "2023-06-22-13-00-00}, ...]
+```
 
 
