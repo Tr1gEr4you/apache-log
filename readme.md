@@ -1,9 +1,4 @@
-# Apache logger
-
-This programm allows you to save Apache access.log in PostgreSQL database. It creates API, which can help you access database. Also, it can work with cron, and have web interface.
-
-
-## Creating table
+## Создать бд
 
 ```console
 foo@bar:~$ sudo -i -u postgres
@@ -11,7 +6,7 @@ postgres@bar:~$ psql -U username -d myDataBase -a -f path/to/table.sql
 postgres@bar:~$ exit
 ```
 
-## Running server with pipenv
+## Запустить сервер с pipenv
 
 ```console
 foo@bar:~$ pip install pipenv
