@@ -14,10 +14,10 @@ pipenv install
 pipenv run python3 main.py
 ```
 
-## Request format
+## Формат запроса
 
-- `DataBase_update` - **POST** method. Returns `{"status" : "ok"}`. Used to update database with log files. 
-- `DataBase_get_log`- **GET** method. Takes two arguments: `from` and `to`, which corresponds to start and end of timeframe. Returns array of **JSON**, each of them have `{"address" : "192.168.0.1", "date" : "2023-06-22-13-00-00}` structure. Date must be in **YYYY-MM-DD-HH-mm-dd** format. You can get all entries in database, by providing `from=all` argument. 
+- `DataBase_update` - **POST** метод. Возвращает `{"status" : "ok"}`. Used to update database with log files. 
+- `DataBase_get_log`- **GET** метод. Принимает два аргумента: `from` и `to`. Возвращает массив из **JSON**, each of them have `{"address" : "192.168.0.1", "date" : "2023-06-22-13-00-00}` structure. Date must be in **YYYY-MM-DD-HH-mm-dd** format. You can get all entries in database, by providing `from=all` argument. 
 ## Request example
 
 ```http
