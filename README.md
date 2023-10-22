@@ -1,17 +1,17 @@
 ## Создать бд
 
 ```console
-foo@bar:~$ sudo -i -u postgres
-postgres@bar:~$ psql -U username -d myDataBase -a -f path/to/table.sql
-postgres@bar:~$ exit
+sudo -i -u postgres
+psql -U username -d myDataBase -a -f path/to/table.sql
+exit
 ```
 
 ## Запустить сервер с pipenv
 
 ```console
-foo@bar:~$ pip install pipenv
-foo@bar:~$ pipenv install
-foo@bar:~$ pipenv run python3 main.py
+pip install pipenv
+pipenv install
+pipenv run python3 main.py
 ```
 
 ## Request format
